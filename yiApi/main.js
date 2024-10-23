@@ -13,7 +13,7 @@ async function getAllItems() {
 }
 
 async function getRandomItem() {
-  const randomNumber = Math.floor(Math.random() * 2180);
+  const randomNumber = Math.floor(Math.random() * 2180) + 1;
   const response = await fetch(url + `item/${randomNumber}`);
 
   if (response.ok) {
